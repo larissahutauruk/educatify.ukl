@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  background-color: #dbc9e7;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px 0 0 0;
+  position: relative;
+}
+.frame-1,
+.frame-3,
+.frame-2 {
+  position: absolute;
+  height: 730px;
+  top: -9px;
+  left: -8px;
+}
+.frame-1 {
+  width: 400px;
+}
+.frame-3 {
+  width: 350px;
+  left: -18px;
+}
+.frame-2 {
+  width: 250px;
+}
+.regist {
+  top: 100px;
+  left: 51%;
+  text-align: center;
+  position: absolute;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 42px;
+  color: #553569;
+}
+.form {
+  background-color: transparent;
+  margin: 280px 0px 0px 730px;
+}
+input[type="text"],
+input[type="number"] {
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #553569;
+  border-radius: 30px;
+  background-color: white;
+  color: #757a7e;
+  text-align: center;
+  width: 255px;
+}
+.form .cn,
+.form .id,
+.form .harga {
+  position: relative;
+  margin-bottom: 20px;
+}
+.form img {
+  position: absolute;
+  left: 20px;
+  top: 41%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: auto;
+}
+.form input {
+  padding-left: 15px;
+}
+.button {
+  color: #553569;
+  font-family: "Inter";
+  font-weight: 500;
+  position: absolute;
+  cursor: pointer;
+  background-color: #e6d9ee;
+  border-radius: 30px;
+  border: 1px solid #ba79e3;
+  width: 100px;
+  bottom: -20%;
+  right: 5%;
+  padding: 10px;
+  text-align: center;
+}
+.masuk {
+  margin-top: 38px;
+  font-family: "Poppins";
+  font-weight: 300;
+  color: #553569;
+  text-align: center;
+}

@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.body {
+  font-family: "Times New Roman", "Roboto Condensed";
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.logo {
+  font-size: 48px;
+  font-weight: 500;
+  float: left;
+  margin-right: 30px;
+  font-family: "Maven Pro";
+  color: #172e44;
+}
+.menu {
+  float: right;
+}
+nav {
+  border-top: 3px solid #ffffff;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: fixed;
+  z-index: 1000;
+  background-color: #f5f5f5;
+  font-family: "Poppins";
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+  margin: 0 0 5px 0;
+  overflow-wrap: break-word;
+  font-weight: 300;
+  font-size: 33px;
+  color: #000;
+  width: fit-content;
+  box-sizing: border-box;
+}
+nav ul li a {
+  color: #172e44;
+  font-weight: initial;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.buku-biru {
+  background: url(elements/buku-biru.jpeg) 50% / cover no-repeat;
+  position: absolute;
+  right: 10%;
+  bottom: 4.5rem;
+  height: 550px;
+  width: 36%;
+}
+.opening h1 {
+  height: 56vh;
+  float: left;
+  left: 11%;
+  width: 50%;
+  padding: 9rem 10rem 5rem 10rem;
+  color: #364554;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 48px;
+}
+.opening p {
+  padding: 9rem 10rem 3rem 10rem;
+  position: absolute;
+  text-align: left;
+  height: 55vh;
+  width: 60%;
+  bottom: -20px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #757a7e;
+}
+.separator {
+  height: 70px;
+  background-color: #f5f5f5;
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  bottom: -35px;
+}
+.contact {
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  margin: auto;
+}
+.contact a {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #172e44;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.contact a:hover {
+  text-decoration: none;
+}
+.contact img {
+  width: 41px;
+  height: 41px;
+}
+.note-ungu {
+  background: url(elements/note-ungu-no-bg.png) 50% / cover no-repeat;
+  height: 300px;
+  width: 35%;
+  position: relative;
+  bottom: -100px;
+  left: 4%;
+  padding-bottom: 50px;
+}
+.subject {
+  color: #172e44;
+  font-family: "Poppins";
+  font-size: 31px;
+  font-weight: 700;
+  position: absolute;
+  text-align: right;
+  right: 10%;
+  top: 9rem;
+}
+.sb a {
+  font-family: "Poppins";
+  font-size: 21px;
+  color: #757a7e;
+  text-align: right;
+  position: absolute;
+  top: 14rem;
+  right: 18%;
+}
+.sb img {
+  text-align: right;
+  right: 36%;
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  top: 13rem;
+}
+.ui a {
+  font-family: "Poppins";
+  font-size: 21px;
+  color: #757a7e;
+  text-align: right;
+  position: absolute;
+  top: 18rem;
+  right: 11.5%;
+}
+.ui img {
+  text-align: right;
+  right: 36%;
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  top: 17rem;
+}
+.guru {
+  background-color: #f5f5f5;
+  font-size: 26px;
+  text-align: center;
+  justify-content: center;
+  padding: 30px 0 35px 0;
+  font-family: "Poppins";
+  color: #364554;
+  margin-top: 150px;
+}
+.teacher {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  height: 60vh;
+  width: 100%;
+  padding: 0 10px 5px 10px;
+}
+.teacher img {
+  width: 200px;
+  height: 200px;
+}
+.arabella,
+.christopher,
+.theodore {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 51vh;
+  padding: 15px 30px 40px 30px;
+  margin: 30px 100px 4px 100px;
+}
+.teacher h4 {
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 700;
+}
+.teacher i {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 200;
+}
+.class {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 26px;
+  color: #364554;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+.class h3 {
+  font-size: 26px;
+  text-align: center;
+  padding: 30px 0 35px 0;
+  font-family: "Poppins";
+  color: #364554;
+}
+.class p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 200;
+}
+.harga {
+  background: linear-gradient(#f5f5f5, #ffffff);
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+}
+.kelas,
+.english {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 251px;
+  padding: 15px 30px 40px 30px;
+  margin: 30px 100px 4px 100px;
+}
+.english {
+  padding: 15px 55px 40px 55px;
+}
+.kelas img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: -30px 140px 0 135px;
+}
+.kelas h2,
+.kelas s,
+.kelas small,
+.kelas h3,
+.english h3,
+.english h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.kelas h3,
+.english h3 {
+  font-size: 22px;
+}
+.kelas s {
+  font-size: 12px;
+}
+.kelas h2,
+.kelas small,
+.english h2 {
+  font-family: "Maven Pro";
+  font-weight: 800;
+}
+.kelas h2 {
+  font-size: 24px;
+}
+.kelas p {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+}
+.kelas a {
+  color: #fff;
+  background-color: #364554;
+  border: 1px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+}
+.comingsoon {
+  position: absolute;
+  width: 265px;
+  height: 210px;
+  margin: 60px;
+  right: 11px;
+}
+.profil {
+  margin: 30px 0 30px 200px;
+  overflow-wrap: break-word;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 92px;
+  color: #172e44;
+}
+.profil h1 {
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 72px;
+  left: 150px;
+  color: #172e44;
+}
+.main {
+  padding: 100px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1300px;
+  height: 400px;
+  background-color: #fafafa;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+}
+.main h2 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Poppins";
+  color: #2f4454;
+  margin: 30px 300px 50px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  color: #000000;
+}
+.welcome {
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: "Inter";
+  font-size: 21px;
+  color: #364554;
+}
+.foto-profil {
+  border-radius: 150px;
+  background: url("elements/best1.jpg") 50% / cover no-repeat;
+  position: absolute;
+  top: 1555px;
+  right: 250px;
+  width: 250px;
+  height: 250px;
+}
+.footer {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  margin-bottom: 50px;
+}

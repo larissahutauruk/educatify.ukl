@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  background-color: #553569;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px 0 0 0;
+  position: relative;
+}
+.frame-2p2,
+.frame-4,
+.frame-1p2 {
+  position: absolute;
+  height: 730px;
+  right: -8px;
+  top: -9px;
+}
+.frame-2p2 {
+  width: 400px;
+}
+.frame-4 {
+  width: 350px;
+}
+.frame-1p2 {
+  width: 250px;
+}
+.login {
+  top: 100px;
+  left: 35%;
+  text-align: center;
+  position: absolute;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 42px;
+  color: #dbc9e7;
+}
+.form {
+  background-color: transparent;
+  left: 15%;
+  margin: 250px 750px 100px 0px;
+}
+input[type="text"],
+input[type="password"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #553569;
+  border-radius: 30px;
+  background-color: white;
+  color: #757a7e;
+  text-align: center;
+  width: 250px;
+}
+.form .user,
+.form .pw,
+.form .lvl {
+  position: relative;
+  margin-bottom: 20px;
+}
+.form img {
+  position: absolute;
+  left: 20px;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: auto;
+}
+.form input {
+  padding-left: 15px;
+}
+.button {
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  background-color: #ba79e3;
+  border-radius: 30px;
+  border: 1px solid #dbc9e7;
+  width: 100px;
+  margin: 90px 0px 0px -380px;
+  padding: 10px;
+  text-align: center;
+}
+.login .username {
+  width: 30.7px;
+  height: 28px;
+}
+.regist {
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Poppins";
+  font-weight: 200;
+}

@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.body {
+  font-family: "Times New Roman", "Roboto Condensed";
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.logo {
+  font-size: 49px;
+  font-weight: 700;
+  float: left;
+  margin-right: 30px;
+  font-family: "cambria", "Roboto Condensed";
+  color: #fff;
+}
+.menu {
+  float: right;
+}
+.is1 {
+  background: url(../elements/ikon\ surabaya\ 1.jpeg) 50% / cover no-repeat;
+  position: absolute;
+  left: 130px;
+  top: -78px;
+  width: 365px;
+  height: 535px;
+}
+nav {
+  border-top: 3px solid #ffffff;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: fixed;
+  z-index: 1000;
+  background-color: #222222;
+  font-family: "Cambria", "Roboto Condensed";
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+  margin: 0 0 5px 0;
+  overflow-wrap: break-word;
+  font-family: "Times New Roman", "Roboto Condensed";
+  font-weight: 400;
+  font-size: 33px;
+  color: #ffffff;
+  width: fit-content;
+  box-sizing: border-box;
+}
+nav ul li a {
+  color: #ffffff;
+  font-weight: initial;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.sbs {
+  position: absolute;
+  top: 100px;
+  right: -0.2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 110px;
+  box-sizing: border-box;
+}
+.sb {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: "Times New Roman", "Roboto Condensed";
+  font-weight: 700;
+  font-size: 122px;
+  color: #364554;
+}
+.surabaya {
+  position: absolute;
+  right: 154px;
+  bottom: 0px;
+  overflow-wrap: break-word;
+  font-family: "Times New Roman", "Roboto Condensed";
+  font-weight: 700;
+  font-size: 122px;
+  color: #757a7e;
+}
+.intro {
+  position: absolute;
+  text-align: right;
+  bottom: 5px;
+  left: 50px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Cambria", "Roboto Condensed";
+  overflow-wrap: break-word;
+  color: #172e44;
+  padding: 25px;
+}
+.is2 {
+  background: url(../elements/ikon\ surabaya\ 2.png) 50% / cover no-repeat;
+  position: absolute;
+  bottom: -69px;
+  right: 0;
+  width: 720px;
+  height: 434px;
+}
+.separator {
+  height: 80px;
+  background-color: #222222;
+}
+.introduction {
+  background-color: #222222;
+  position: absolute;
+  padding: 20px;
+  color: #fff;
+  font-family: "Cambria";
+  text-align: center;
+  height: 80px;
+  font-size: 31px;
+  font-weight: 300;
+  bottom: -81px;
+  width: 100%;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.intro-to {
+  color: #364554;
+  text-align: justify;
+  font-size: 26px;
+  font-family: "Cambria";
+  height: auto;
+  padding: 54rem 3rem 4rem 3rem;
+}
+.intro-to a {
+  color: #364554;
+}
+.budaya {
+  background-color: #364554;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 31px;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 25px 5px 25px;
+}
+.bagian ul,
+h3,
+h4,
+p {
+  padding: 0 40px 0 40px;
+  font-size: 26px;
+  color: whitesmoke;
+  font-family: "Segoe UI";
+  justify-content: center;
+}
+.bagian h3 {
+  font-weight: 600;
+  text-align: left;
+  left: 30px;
+}
+.bagian h4 {
+  font-weight: 400;
+  left: 10%;
+}
+.bagian p {
+  font-weight: 100;
+  color: #fff;
+  left: 30%;
+}
+.bagian {
+  background-color: #364554;
+  height: 60vh;
+  width: 100%;
+  padding: 0 10px 5px 10px;
+  height: 1100px;
+}
+.pict {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 420px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 60px;
+}
+.item {
+  background-color: #333;
+  color: #fff;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.item img {
+  width: 100%;
+  display: block;
+}
+.item p {
+  margin: 4px 8px 0 4px;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 500;
+  padding: 5px;
+}
+.sumber {
+  position: absolute;
+  background-color: #222222;
+  border: 3px solid #364554;
+  height: 170px;
+  width: 100%;
+  bottom: -2184px;
+}
+.sumber h4 {
+  font-family: "Cambria", "Roboto Condensed";
+  font-size: 26px;
+  font-weight: 600;
+  margin: 15px 0 20px 20px;
+}
+.sumber a {
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  overflow-wrap: break-word;
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 130px 10px 130px;
+}
+.separator {
+  bottom: -2250px;
+  height: 70px;
+  background-color: #222222;
+  border: 3px solid #364554;
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+}
+.contact {
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  margin: auto;
+}
+.contact a {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.contact a:hover {
+  text-decoration: none;
+}
+.contact img {
+  width: 41px;
+  height: 41px;
+}
