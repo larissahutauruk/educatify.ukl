@@ -77,6 +77,7 @@ nav ul li a {
   width: 36%;
 }
 .opening h1 {
+  top: 20px;
   height: 56vh;
   float: left;
   left: 11%;
@@ -93,11 +94,53 @@ nav ul li a {
   text-align: left;
   height: 55vh;
   width: 60%;
-  bottom: -20px;
+  bottom: 6px;
   font-size: 22px;
   font-weight: 400;
   font-family: "Poppins";
   color: #757a7e;
+}
+.regin {
+  position: absolute;
+  bottom: 10vh;
+  float: left;
+  left: 10.5%;
+}
+ul li {
+  margin-bottom: -121px;
+  overflow-wrap: break-word;
+  font-family: "Maven Pro";
+  font-weight: 600;
+  font-size: 22px;
+  color: #222222;
+  width: auto;
+  display: inline-block;
+  box-sizing: border-box;
+}
+ul li a {
+  padding: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+.regis {
+  background-color: #172e44;
+  display: inline-block;
+  padding: 7px 47px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 20px;
+}
+.log-in {
+  color: #172e44;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 7px 47px;
+  border: 1px solid #172e44;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-left: 20px;
 }
 .separator {
   height: 70px;
@@ -108,6 +151,7 @@ nav ul li a {
   bottom: -35px;
 }
 .contact {
+  border-bottom: 2px #e0e0e0;
   overflow-wrap: break-word;
   display: flex;
   justify-content: space-around;
@@ -129,59 +173,6 @@ nav ul li a {
   width: 41px;
   height: 41px;
 }
-.note-ungu {
-  background: url(elements/note-ungu-no-bg.png) 50% / cover no-repeat;
-  height: 300px;
-  width: 35%;
-  position: relative;
-  bottom: -100px;
-  left: 4%;
-  padding-bottom: 50px;
-}
-.subject {
-  color: #172e44;
-  font-family: "Poppins";
-  font-size: 31px;
-  font-weight: 700;
-  position: absolute;
-  text-align: right;
-  right: 10%;
-  top: 9rem;
-}
-.sb a {
-  font-family: "Poppins";
-  font-size: 21px;
-  color: #757a7e;
-  text-align: right;
-  position: absolute;
-  top: 14rem;
-  right: 18%;
-}
-.sb img {
-  text-align: right;
-  right: 36%;
-  position: absolute;
-  height: 55px;
-  width: 55px;
-  top: 13rem;
-}
-.ui a {
-  font-family: "Poppins";
-  font-size: 21px;
-  color: #757a7e;
-  text-align: right;
-  position: absolute;
-  top: 18rem;
-  right: 11.5%;
-}
-.ui img {
-  text-align: right;
-  right: 36%;
-  position: absolute;
-  height: 55px;
-  width: 55px;
-  top: 17rem;
-}
 .guru {
   background-color: #f5f5f5;
   font-size: 26px;
@@ -190,7 +181,7 @@ nav ul li a {
   padding: 30px 0 35px 0;
   font-family: "Poppins";
   color: #364554;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 .teacher {
   display: flex;
@@ -244,22 +235,19 @@ nav ul li a {
   font-family: "Poppins";
   font-weight: 200;
 }
-.harga {
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr); /* Membuat 3 kolom */
+  gap: 15px;
   background: linear-gradient(#f5f5f5, #ffffff);
-  height: 40vh;
-  display: flex;
-  justify-content: space-between;
 }
-.kelas,
-.english {
+.kelas {
   background-color: #ffffff;
   border-radius: 10px;
-  height: 251px;
-  padding: 15px 30px 40px 30px;
-  margin: 30px 100px 4px 100px;
-}
-.english {
-  padding: 15px 55px 40px 55px;
+  height: 150px;
+  width: 200px;
+  padding: 15px 30px 50px 30px;
+  margin: 30px 150px 4px 150px;
 }
 .kelas img {
   width: 60px;
@@ -268,24 +256,16 @@ nav ul li a {
   margin: -30px 140px 0 135px;
 }
 .kelas h2,
-.kelas s,
 .kelas small,
-.kelas h3,
-.english h3,
-.english h2 {
+.kelas h3 {
   font-family: "Poppins";
   font-weight: 600;
 }
-.kelas h3,
-.english h3 {
+.kelas h3 {
   font-size: 22px;
 }
-.kelas s {
-  font-size: 12px;
-}
 .kelas h2,
-.kelas small,
-.english h2 {
+.kelas small {
   font-family: "Maven Pro";
   font-weight: 800;
 }
@@ -309,73 +289,97 @@ nav ul li a {
   text-align: center;
   padding: 5px 10px 5px 10px;
 }
-.comingsoon {
-  position: absolute;
-  width: 265px;
-  height: 210px;
-  margin: 60px;
-  right: 11px;
+footer {
+  margin-top: 40px;
+  background-color: #111;
+  height: 15rem;
+  color: #f5f5f5;
 }
-.profil {
-  margin: 30px 0 30px 200px;
-  overflow-wrap: break-word;
+.us {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  right: 10%;
+  top: 5rem;
+}
+.us a {
   font-family: "Poppins";
-  font-weight: 700;
-  font-size: 92px;
-  color: #172e44;
-}
-.profil h1 {
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: "Poppins";
-  font-weight: 700;
-  font-size: 72px;
-  left: 150px;
-  color: #172e44;
-}
-.main {
-  padding: 100px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 1300px;
-  height: 400px;
-  background-color: #fafafa;
-  margin: 0 auto;
-  padding-top: 15px;
-  border-radius: 10px;
-  border: 1px solid #eeeeee;
-}
-.main h2 {
-  text-align: left;
-  font-size: 30px;
-  font-weight: 700;
-  font-family: "Poppins";
-  color: #2f4454;
-  margin: 30px 300px 50px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  color: #000000;
-}
-.welcome {
-  text-align: center;
-  overflow-wrap: break-word;
-  font-family: "Inter";
   font-size: 21px;
-  color: #364554;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
 }
-.foto-profil {
-  border-radius: 150px;
-  background: url("elements/best1.jpg") 50% / cover no-repeat;
-  position: absolute;
-  top: 1555px;
-  right: 250px;
-  width: 250px;
-  height: 250px;
+.us a:hover {
+  text-decoration: none;
 }
-.footer {
-  background-color: white;
+.us img {
+  width: 35px;
+  height: 35px;
+}
+.educatify {
+  position: relative;
+  justify-content: left;
+  left: 8%;
+  top: -7.5rem;
+}
+.educatify h4,
+.footer-nav h4 {
+  color: #8c48ff;
+}
+.educatify p {
+  color: #fff;
   width: 100%;
-  position: absolute;
-  height: 50px;
-  margin-bottom: 50px;
+  padding: 1.5rem 70rem 0 1.5rem;
+}
+.us {
+  position: relative;
+  top: 3rem;
+}
+.us h4 {
+  position: relative;
+  top: 3rem;
+  color: #8c48ff;
+}
+.us img {
+  position: relative;
+  top: 5rem;
+  right: 5%;
+  gap: 10px;
+}
+.footer-nav {
+  top: 1.5rem;
+  display: grid;
+  position: relative;
+  justify-content: center;
+  gap: 15px;
+}
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  margin-top: -5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  background-color: #111;
+}
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
 }

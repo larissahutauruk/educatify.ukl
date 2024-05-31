@@ -14,22 +14,25 @@ if ($login) {
 
     if ($cek > 0) {
         $data = mysqli_fetch_assoc($login);
+        $id_user = $data["id_user"];
+        session_start();
 
-        if ($data['level'] == "pengajar" ) {
-            $_SESSION['username'] == $username;
-            $_SESSION['password'] == $password;
-            header("Location: admin/user.php");
-        } else if ($data['level'] == "pelajar" ) {
-            $_SESSION['username'] == $username;
-            $_SESSION['password'] == $password;
+        if ($data['level'] == "pengajar") {
+            $_SESSION['id_user'] = $id_user;
+            $_SESSION['username'] = $username;
+            $_SESSION['password'] = $password;
+            header("Location: admin/index.php");
+        } else if ($data['level'] == "pelajar") {
+            $_SESSION['id_user'] = $id_user;
+            $_SESSION['username'] = $username;
+            $_SESSION['password'] = $password;
             header("Location: user/index.php");
-        }
-        else {
-            header("Location: homepage.php");
+        } else {
+            header("Location: index.php");
             print "coba sekali lagi.";
         }
     } else {
-        header("Location: homepage.php?pesan=gagal");
+        header("Location: index.php?pesan=gagal");
         echo "level tidak ditemukan";
     }
 } else {

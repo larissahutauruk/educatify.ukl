@@ -45,7 +45,8 @@ body {
   margin: 280px 0px 0px 730px;
 }
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+input[type="time"] {
   margin-bottom: 10px;
   padding: 12px;
   border: 1px solid #553569;
@@ -57,17 +58,11 @@ input[type="number"] {
 }
 .form .cn,
 .form .id,
-.form .harga {
+.form .harga,
+.form .hari,
+.form .waktu {
   position: relative;
   margin-bottom: 20px;
-}
-.form img {
-  position: absolute;
-  left: 20px;
-  top: 41%;
-  transform: translateY(-50%);
-  width: 25px;
-  height: auto;
 }
 .form input {
   padding-left: 15px;
@@ -82,7 +77,7 @@ input[type="number"] {
   border-radius: 30px;
   border: 1px solid #ba79e3;
   width: 100px;
-  bottom: -20%;
+  bottom: -5%;
   right: 5%;
   padding: 10px;
   text-align: center;

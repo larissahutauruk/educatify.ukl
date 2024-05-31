@@ -23,8 +23,8 @@ $id_user=$_GET['id_user'];
 
 $result= mysqli_query($mysqli, "SELECT transaksi.id_transaksi, kelas.nama_kelas, kelas.harga, user.nama, transaksi.bukti 
 FROM transaksi 
-JOIN transaksi ON kelas.id_kelas = transaksi.id_kelas
-JOIN transaksi ON user.id_user = transaksi.id_user
+JOIN kelas ON transaksi.id_kelas = kelas.id_kelas
+JOIN user ON transaksi.id_user = user.id_user
 WHERE kelas.id_kelas = '$id_kelas' AND user.id_user = '$id_user'");
 while($user_data=mysqli_fetch_array($result)) {
 //     $id_user = $user_data['id_user'];

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.body {
+  font-family: "Times New Roman", "Roboto Condensed";
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.logo {
+  font-size: 48px;
+  font-weight: 500;
+  float: left;
+  margin-right: 30px;
+  font-family: "Maven Pro";
+  color: #172e44;
+}
+.menu {
+  float: right;
+}
+nav {
+  border-top: 3px solid #ffffff;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: absolute;
+  z-index: 1000;
+  background-color: #f5f5f5;
+  font-family: "Poppins";
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+  margin: 0 0 5px 0;
+  overflow-wrap: break-word;
+  font-weight: 300;
+  font-size: 33px;
+  color: #000;
+  width: fit-content;
+  box-sizing: border-box;
+}
+nav ul li a {
+  color: #172e44;
+  font-weight: initial;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.method {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172e44;
+  position: absolute;
+  margin: 120px 110px;
+  margin-left: 110px;
+}
+.kotak1 {
+  height: 24rem;
+  position: absolute;
+  left: 11%;
+  bottom: 10rem;
+  width: 23%;
+  display: grid;
+  border: 1px solid #364554;
+  background-color: #fff;
+  padding: 50.5px 1px 50px 11px;
+  box-sizing: border-box;
+}
+.kelas {
+  position: absolute;
+  bottom: 1rem;
+  margin: 0 10px 0 10px;
+  align-items: center;
+}
+.kelas img {
+  position: absolute;
+  bottom: 9rem;
+  width: 20.5rem;
+  height: 12rem;
+}
+.kelas h3 {
+  font-size: 22px;
+  font-family: "poppins";
+  font-weight: 800;
+  margin-left: 15px;
+}
+.kelas p {
+  margin-left: 15px;
+  font-size: 20px;
+  font-family: "poppins";
+  font-weight: 400;
+}
+.form {
+  position: absolute;
+  right: 11%;
+  top: 10rem;
+}
+.pay,
+.tanggal,
+.file {
+  margin-top: 30px;
+  margin-bottom: 55px;
+  font-size: 22px;
+  color: #172e44;
+  font-family: Arial, Helvetica, sans-serif;
+}
+select[name="metode_pembayaran"],
+input[type="date"],
+input[type="file"] {
+  padding: 12px 90px 12px 90px;
+  border: 1px solid #364554;
+  border-radius: 6px;
+}
+input[type="date"],
+input[type="file"] {
+  background-color: #f5f5f5;
+}
+label {
+  font-family: "arial";
+  font-weight: 600;
+  color: black;
+}
+label[for="metode_pembayaran"] {
+  position: absolute;
+  top: 3rem;
+}
+select[name="metode_pembayaran"] {
+  padding: 12px 110px 12px 110px;
+  position: absolute;
+  top: 5rem;
+}
+label[for="bukti"] {
+  position: absolute;
+  right: 15.5rem;
+  top: 3rem;
+}
+input[type="file"] {
+  position: absolute;
+  right: 1%;
+  top: 5rem;
+  padding: 12px 25px 12px 25px;
+}
+label[for="tanggal"] {
+  position: absolute;
+  top: 11rem;
+}
+input[type="date"] {
+  position: absolute;
+  top: 13rem;
+}
+button {
+  margin-top: 50px;
+  padding: 15px 250px 15px 250px;
+  bottom: 1rem;
+  background-color: #172e44;
+  color: #fff;
+  font-family: "inter";
+  font-size: 20px;
+  font-weight: 600;
+}

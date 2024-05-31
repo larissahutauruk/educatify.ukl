@@ -41,7 +41,8 @@ body {
   margin: 180px;
 }
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+input[type="file"] {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -70,17 +71,9 @@ input[type="submit"] {
   text-align: center;
 }
 .form .user,
-.form .id_pengajar,
-.form .id_pelajar,
-.form .harga {
+.form .id_user,
+.form .harga,
+.form .image {
   position: absolute;
   margin-bottom: 20px;
-}
-.form img {
-  position: absolute;
-  left: 20px;
-  top: 41%;
-  transform: translateY(-50%);
-  width: 25px;
-  height: auto;
 }

@@ -59,9 +59,7 @@ input[type="email"] {
 .form .user,
 .form .pw,
 .form .fn,
-.form .lvl,
-.form .email,
-.form .banking {
+.form .email {
   position: relative;
   margin-bottom: 20px;
 }

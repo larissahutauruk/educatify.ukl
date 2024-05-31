@@ -1,7 +1,7 @@
 <?php
 include '../koneksi.php';
 
-$result=mysqli_query($mysqli, "UPDATE transaksi 
+$result = mysqli_query($mysqli, "UPDATE transaksi 
 JOIN transaksi ON kelas.id_kelas = transaksi.id_kelas 
 JOIN transaksi ON user.id_user = transaksi.id_user 
 SET 
