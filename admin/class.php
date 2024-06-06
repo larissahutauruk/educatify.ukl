@@ -12,8 +12,7 @@
     <?php include "navbar.php"; ?>
 
     <h1>Apa saja kelas yang bisa diambil di Educatify?</h1>
-
-    <a href="addc.php">Add New Data</a>
+        <a href="addc.php" class="add">Tambahkan kelas Baru +</a>
     <table>
         <tr>
             <th>Nomor</th>

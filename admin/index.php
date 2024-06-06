@@ -12,6 +12,7 @@
   <?php include "navbar.php"; ?>
 
   <h1>Selamat datang di Tabel User!</h1>
+  <a href="add.php" class="add">Add New User</a>
   <table border='0'>
     <tr>
       <th>No.</th>

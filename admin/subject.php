@@ -12,8 +12,7 @@
     <?php include "navbar.php"; ?>
 
     <h1>Materi apa saja yang ada di dalam kelas Educatify?</h1>
-    
-    <a href="adds.php">Add New Data</a>
+    <a href="adds.php" class="add">Add New Subject Here</a>
     <table>
         <tr>
             <th>Nomor</th>

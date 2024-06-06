@@ -86,7 +86,7 @@
         </div>
         <div class="buy">
             <?php if ($cek == 0) {
-                echo '<p>Suka dengan website kami?</p>' . '<a href="buy.php?id=' . $id_kelas . '">Yuk, langganan disini!</a>';
+                echo '<p>Suka dengan website kami?</p>' . '<a href="buy1.php?id=' . $id_kelas . '">Yuk, langganan disini!</a>';
             } ?>
         </div>
     </div>

@@ -40,7 +40,7 @@ if ($query) {
     <div class="akun">
         <h1>Selamat Datang, <?php echo htmlspecialchars($data['nama']); ?>!</h1>
         <div class="info">
-            <h2>Informasi Pengguna:</h2>
+            <img src="../elements/user.jpeg" width="120px" height="120px">
             <p>Nama: <?php echo htmlspecialchars($data['username']); ?></p>
             <p class="pw" type="password">Password: <?php echo htmlspecialchars($data['password']); ?></p>
             <p>Email: <?php echo htmlspecialchars($data['email']); ?></p>

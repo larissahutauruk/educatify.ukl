@@ -20,7 +20,6 @@ if ($query) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="akun.css">
     <link rel="stylesheet" href="myprofil.css">
     <title>Akun Pengguna</title>
 </head>
@@ -32,8 +31,8 @@ if ($query) {
             <div class="menu">
                 <ul>
                     <li><a href="../logout.php">Logout</a></li>
-                    <li><a href="../user/editakun.php">Edit</a></li>
-                    <li><a href="../user/editpw.php">Edit Password</a></li>
+                    <li><a href="editakun.php">Edit</a></li>
+                    <li><a href="editpw.php">Edit Password</a></li>
                     <li><a href="index.php">Back</a></li>
                 </ul>
             </div>
@@ -41,7 +40,7 @@ if ($query) {
     <div class="akun">
         <h1>Selamat Datang, <?php echo htmlspecialchars($data['nama']); ?>!</h1>
         <div class="info">
-            <h2>Informasi Pengguna:</h2>
+            <img src="../elements/user.jpeg" width="120px" height="120px">
             <p>Nama: <?php echo htmlspecialchars($data['username']); ?></p>
             <p class="pw" type="password">Password: <?php echo htmlspecialchars($data['password']); ?></p>
             <p>Email: <?php echo htmlspecialchars($data['email']); ?></p>

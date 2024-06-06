@@ -31,16 +31,41 @@ $data = mysqli_fetch_assoc($result);
 </head>
 
 <body>
-  <?php include 'navbaruser.php'; ?>
 
-  <h3><?php echo htmlspecialchars($data['nama_kelas']); ?></h3>
-  <img src="<?php echo htmlspecialchars("../admin/" . $data['image']); ?>" alt="" width="300" height="150"><br>
-  <p>Harga : <?php echo htmlspecialchars("Rp. " . number_format($data['harga'])); ?></p>
-  <p>Status : <?php echo htmlspecialchars($data['status']); ?></p>
-  <h3>Bukti Transaksi</h3>
-  <img src="<?php echo htmlspecialchars($data['bukti']); ?>" alt="" width="300" height="150"><br>
-  <a href="mytransaksi.php">Back</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-</body>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">Educatify.</div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="akun.php">Profil</a></li>
+            <li><a href="mytransaksi.php">Back</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="detail">
+      <div class="column">
+        <h3><?php echo htmlspecialchars($data['nama_kelas']); ?></h3>
+        <p>Harga : <?php echo htmlspecialchars("Rp. " . number_format($data['harga'])); ?></p>
+      </div>
+      <div class="column">
+        <img src="<?php echo htmlspecialchars("../admin/" . $data['image']); ?>">
+      </div>
+      <div class="column">
+        <h3>Bukti Transaksi</h3>
+        <p>Status : <?php echo htmlspecialchars($data['status']); ?></p>
+      </div>
+      <div class="column">
+        <img src="<?php echo htmlspecialchars($data['bukti']); ?>"><br>
+      </div>
+    </div>
+  </body>
 
 </html>

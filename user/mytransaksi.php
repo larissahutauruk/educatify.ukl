@@ -8,11 +8,12 @@ if (!isset($_SESSION['id_user'])) {
 }
 
 $id_user = $_SESSION['id_user'];
-$query = "SELECT *
+$query = "SELECT transaksi.*, kelas.nama_kelas, kelas.image, kelas.harga, user.nama, metode_pembayaran.nama_metode
           FROM transaksi 
         --   JOIN materi ON transaksi.id_kelas = materi.id_kelas
           JOIN kelas ON transaksi.id_kelas = kelas.id_kelas
           JOIN user ON transaksi.id_user = user.id_user
+        JOIN metode_pembayaran ON transaksi.id_metode = metode_pembayaran.id_metode
           WHERE transaksi.id_user = '$id_user'";
 
 $result = mysqli_query($mysqli, $query);
@@ -57,12 +58,12 @@ $result = mysqli_query($mysqli, $query);
                 </td>
                 <td><?php echo "Rp. " . number_format($data['harga']); ?></td>
                 <td><?php echo htmlspecialchars($data['nama']); ?></td>
-                <td><?php echo htmlspecialchars($data['metode_pembayaran']); ?></td>
+                <td><?php echo htmlspecialchars($data['nama_metode']); ?></td>
                 <td><?php echo htmlspecialchars($data['tanggal']); ?></td>
                 <td><?php echo htmlspecialchars($data['status']); ?></td>
                 <td><a href="detail.php?id=<?php echo $data["id_transaksi"]; ?>">Details</a></td>
                 <td><?php if ($data['status'] === 'pending') { ?>
-                        <a href="../admin/deletetransaksi.php?id=<?php echo $data['id_transaksi']; ?>">Cancel</a>
+                        <a href="deletetransaksi.php?id=<?php echo $data['id_transaksi']; ?>">Cancel</a>
                     <?php } ?>
                 </td>
             </tr>

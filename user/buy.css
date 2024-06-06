@@ -74,14 +74,13 @@ nav ul li a {
   font-size: 32px;
   color: #172e44;
   position: absolute;
-  margin: 120px 110px;
-  margin-left: 110px;
+  margin: 7rem 0 0 110px;
 }
 .kotak1 {
   height: 24rem;
   position: absolute;
   left: 11%;
-  bottom: 10rem;
+  bottom: 8.5rem;
   width: 23%;
   display: grid;
   border: 1px solid #364554;
@@ -113,29 +112,46 @@ nav ul li a {
   font-family: "poppins";
   font-weight: 400;
 }
-.form {
+.form,
+.form2 {
   position: absolute;
   right: 11%;
-  top: 10rem;
+  bottom: 5rem;
+}
+.pay {
+  position: absolute;
+  right: 22.5rem;
+  bottom: 13rem;
 }
 .pay,
+.pay2,
 .tanggal,
-.file {
+.file,
+.banking {
   margin-top: 30px;
   margin-bottom: 55px;
   font-size: 22px;
   color: #172e44;
   font-family: Arial, Helvetica, sans-serif;
 }
-select[name="metode_pembayaran"],
+select[name="metode_pembayaran"] {
+  padding: 12px 120px 12px 120px;
+  border: 1px solid #364554;
+  border-radius: 6px;
+}
 input[type="date"],
+select[name="bank_name"],
 input[type="file"] {
   padding: 12px 90px 12px 90px;
   border: 1px solid #364554;
   border-radius: 6px;
 }
+label[for="bukti"] input[type="file"] {
+  position: relative;
+  right: 2%;
+}
 input[type="date"],
-input[type="file"] {
+select[name="bank_name"] {
   background-color: #f5f5f5;
 }
 label {
@@ -143,41 +159,46 @@ label {
   font-weight: 600;
   color: black;
 }
-label[for="metode_pembayaran"] {
+label[for="nama_bank"] {
   position: absolute;
+  right: 7rem;
   top: 3rem;
 }
-select[name="metode_pembayaran"] {
-  padding: 12px 110px 12px 110px;
-  position: absolute;
-  top: 5rem;
-}
-label[for="bukti"] {
-  position: absolute;
-  right: 15.5rem;
-  top: 3rem;
-}
-input[type="file"] {
+select[name="bank_name"] {
   position: absolute;
   right: 1%;
   top: 5rem;
-  padding: 12px 25px 12px 25px;
+  padding: 12px 5rem 12px 5rem;
 }
 label[for="tanggal"] {
   position: absolute;
-  top: 11rem;
+  top: 11.5rem;
 }
 input[type="date"] {
   position: absolute;
   top: 13rem;
 }
+.banking {
+  position: absolute;
+  right: 27.5rem;
+  top: 20%;
+}
+.banking h4,
+.banking h2 {
+  margin: 10px;
+  padding: 5px;
+}
 button {
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 15px 250px 15px 250px;
-  bottom: 1rem;
   background-color: #172e44;
   color: #fff;
   font-family: "inter";
   font-size: 20px;
   font-weight: 600;
+}
+.next {
+  position: absolute;
+  bottom: 10rem;
+  right: 7rem;
 }

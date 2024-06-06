@@ -70,25 +70,34 @@ nav ul li a {
   font-weight: 400;
 }
 .akun h1 {
-  margin-top: 10%;
+  margin: 4rem;
   position: relative;
   text-align: center;
   font-family: "Poppins";
   color: black;
 }
 .info {
-  border: 2px solid black;
-  border-radius: 50px;
+  border-radius: 15px;
+  justify-content: center;
+  background-color: #f5f5f5;
   width: 30%;
   height: 50%;
-  margin: 9rem 33rem;
+  margin: 2rem 33rem;
+  padding: 20px;
+  box-shadow: 5px 0 25px 0 rgba(66, 61, 61, 0.3);
+}
+img {
+  margin-left: 38%;
+  position: relative;
+  border-radius: 100%;
+  align-items: center;
 }
 .info h2 {
   font-weight: 600;
 }
 .info h2,
 .info p {
-  margin: 2rem 6rem;
+  margin: 2rem 3rem;
   font-family: "poppins";
   color: black;
   font-weight: 400;

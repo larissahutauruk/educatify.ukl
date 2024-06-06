@@ -17,25 +17,13 @@
         <p>Bersama dengan guru-guru hebat akan memberi kalian ilmu melalui website yang akan diperbarui setiap minggu.
             Pantau terus website ini agar tidak ketinggalan informasi lainnya !</p>
     </div>
-    <div class="separator">
-        <div class="contact">
-            <img src="../elements/uil-ig.svg" alt="ig">
-            <a href="https://www.instagram.com/imlariissahtrk_/">@imlariissahtrk</a>
-            <img src="../elements/uil-wa.svg" alt="wa">
-            <a href="https://api.whatsapp.com/send/?phone=6285785614715">+62 8578-5614-715</a>
-            <img src="../elements/logo-tiktok.svg" alt="tiktok" width="41" height="46">
-            <a href="https://www.tiktok.com/@itsme.lrssa?_t=8m1vPgcXklV&_r=1">@itsme.lrssa</a>
-        </div>
-    </div>
 
     <div class="container" id="home">
         <?php
         session_start();
         include '../koneksi.php';
 
-
         $id_user = $_SESSION["id_user"];
-
 
         $query_mysqli = mysqli_query($mysqli, "SELECT * FROM kelas") or die(mysqli_error($mysqli));
         while ($data = mysqli_fetch_array($query_mysqli)) {
@@ -52,15 +40,25 @@
             <div class="kelas">
                 <h3><?php echo $data['nama_kelas']; ?></h3>
                 <h4><?php echo "Rp. " . number_format($data['harga']); ?></h4>
-                <a href="kelas.php?id_kelas=<?php echo $id; ?>">Go To Class</a>
+                <a href="kelas.php?id_kelas=<?php echo $id; ?>">Go To Class  > </a>
                 <?php if ($cek == 0) {
-                    echo '<a href="buy.php?id=' . $id . '">Buy</a>';
+                    echo '<a href="buy1.php?id=' . $id . '">Buy</a>';
                 } ?>
+                <div class="batas"></div>
             </div>
         <?php } ?>
     </div>
-
     <footer>
+        <div class="separator">
+            <div class="contact">
+                <img src="../elements/uil-ig.svg" alt="ig">
+                <a href="https://www.instagram.com/imlariissahtrk_/">@imlariissahtrk</a>
+                <img src="../elements/uil-wa.svg" alt="wa">
+                <a href="https://api.whatsapp.com/send/?phone=6285785614715">+62 8578-5614-715</a>
+                <img src="../elements/logo-tiktok.svg" alt="tiktok" width="41" height="46">
+                <a href="https://www.tiktok.com/@itsme.lrssa?_t=8m1vPgcXklV&_r=1">@itsme.lrssa</a>
+            </div>
+
     </footer>
 </body>
 

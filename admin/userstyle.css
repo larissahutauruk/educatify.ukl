@@ -19,7 +19,7 @@ html {
   box-sizing: border-box;
 }
 .logo {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 500;
   float: left;
   font-family: "Maven Pro";
@@ -57,7 +57,7 @@ nav ul li a {
   color: #172e44;
   font-weight: initial;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 400;
@@ -114,15 +114,17 @@ tr:hover {
   background-color: #555;
 }
 .add {
+  color: #000;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  position: relative;
+  padding: 15px 41.5rem 15px 41.5rem;
   font-family: "Poppins";
   text-align: center;
   margin-top: 20px;
   font-weight: 700;
-}
-.add a {
-  text-decoration: none;
-  color: #343a40;
+  font-weight: 400;
 }
 .add a:hover {
-  text-decoration: underline;
+  background-color: #e9ecef;
 }
