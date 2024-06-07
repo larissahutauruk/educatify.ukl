@@ -43,7 +43,7 @@
         <td><?php echo $data['nama_metode']; ?></td>
         <td><?php echo $data['tanggal']; ?></td>
         <td><?php echo $data['status']; ?></a></td>
-        <td><a href="action.php?id_transaksi=<?php echo $data['id_transaksi']; ?>">Action</a></td>
+        <td class="action"><a href="action.php?id_transaksi=<?php echo $data['id_transaksi']; ?>">Action</a></td>
       </tr>
     <?php } ?>
     </tr>

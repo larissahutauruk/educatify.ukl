@@ -96,10 +96,12 @@ tr:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4);
   transition: box-shadow 0.3 ease;
 }
+.action,
 .edit,
 .delete {
   text-align: center;
 }
+.action a,
 .edit a,
 .delete a {
   text-decoration: none;
@@ -109,6 +111,7 @@ tr:hover {
   border-radius: 5px;
   transition: #222 0.3s ease;
 }
+.edit a:hover,
 .edit a:hover,
 .delete a:hover {
   background-color: #555;

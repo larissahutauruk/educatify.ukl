@@ -115,12 +115,19 @@ label {
   right: 3%;
   margin-top: 20px;
 }
+.kotak{
+  justify-content: flex-end;
+  position: relative;
+  position: absolute;
+  right: 1%;
+}
 .materi {
   background-color: #fff;
   border: 1px solid #333;
   border-radius: 100px;
   padding: 10px 20px 10px 20px;
   margin: 10px;
+  position: relative;
 }
 .materi p,
 a,
@@ -220,16 +227,19 @@ a {
   width: 18rem;
   height: 10rem;
 }
+.buy{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 7rem;
+}
 .buy p,
 .buy a {
   font-size: 18px;
-  position: absolute;
-  display: flex;
   margin-top: 8px;
   color: #172e44;
   font-family: "maven pro";
   font-weight: 800;
-  right: 17rem;
 }
 .buy a {
   font-weight: 600;

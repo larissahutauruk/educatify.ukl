@@ -9,6 +9,15 @@
 </head>
 
 <body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">Educatify.</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.php">Back</a></li>
+                </ul>
+            </div>
+    </nav>
     <h4 class="method">PEMBAYARAN</h4>
     <?php
     session_start();

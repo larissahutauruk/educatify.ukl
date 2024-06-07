@@ -61,6 +61,11 @@
         }
     }
     ?>
+    <div class="buy">
+        <?php if ($cek == 0) {
+            echo '<p>Suka dengan website kami?</p>' . '<a href="buy1.php?id=' . $id_kelas . '">Yuk, langganan disini!</a>';
+        } ?>
+    </div>
     <div class="container">
 
         <?php if ($cek > 0) {
@@ -74,7 +79,9 @@
             $nama_materi = htmlspecialchars($data['nama_materi']);
             $id_materi = htmlspecialchars($data['id_materi']);
             ?>
+        </div>
 
+        <div class="kotak">
             <div class="materi">
                 <h2><?php echo $data["nama_materi"]; ?></h2>
                 <?php if ($cek > 0) {
@@ -83,11 +90,6 @@
                 <p><?php echo $data["rangkuman"]; ?></p>
                 <h5><?php echo $data["waktu"]; ?></h5>
             <?php } ?>
-        </div>
-        <div class="buy">
-            <?php if ($cek == 0) {
-                echo '<p>Suka dengan website kami?</p>' . '<a href="buy1.php?id=' . $id_kelas . '">Yuk, langganan disini!</a>';
-            } ?>
         </div>
     </div>
 </body>
