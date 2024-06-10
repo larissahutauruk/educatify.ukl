@@ -68,24 +68,21 @@
     </div>
     <div class="container">
 
-        <?php if ($cek > 0) {
-            echo '<th>Action</th>';
-        } ?>
-
         <?php
 
         $query_mysqli = mysqli_query($mysqli, "SELECT * FROM materi WHERE id_kelas=$id_kelas");
         while ($data = mysqli_fetch_array($query_mysqli)) {
             $nama_materi = htmlspecialchars($data['nama_materi']);
             $id_materi = htmlspecialchars($data['id_materi']);
+            $file_materi = htmlspecialchars($data['file_materi']);
             ?>
         </div>
-
+        
         <div class="kotak">
             <div class="materi">
                 <h2><?php echo $data["nama_materi"]; ?></h2>
                 <?php if ($cek > 0) {
-                    echo '<a href="materi.php?id_kelas=' . $id_kelas . '&id_materi=' . $data["id_materi"] . '">Akses Materi</a>';
+                    echo '<a href="' . $file_materi . '">Akses Materi > </a>';
                 } ?>
                 <p><?php echo $data["rangkuman"]; ?></p>
                 <h5><?php echo $data["waktu"]; ?></h5>
